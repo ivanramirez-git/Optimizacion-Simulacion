@@ -1,0 +1,21 @@
+{
+  "name": "taller3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jstat": "^1.9.6",
+    "lodash": "^4.17.21",
+    "mathjs": "^12.4.1",
+    "normal-distribution": "^1.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

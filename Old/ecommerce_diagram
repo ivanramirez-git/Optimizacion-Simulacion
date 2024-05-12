@@ -1,0 +1,11 @@
+digraph {
+	A [label="Llegada de Clientes"]
+	B [label="Selección de Productos en Carrito"]
+	C [label="Proceso de Pago"]
+	D [label="Compra Completada"]
+	E [label=Abandono]
+	A -> B [label="Llegada (10 clientes/min)"]
+	B -> C [label="Selección (5 clientes/min)"]
+	C -> D [label="Compra (7 clientes/min)"]
+	B -> E [label="Abandono (2 clientes/min)"]
+}

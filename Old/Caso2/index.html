@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos CSS para el diagrama */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stage {
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            margin: 0 auto;
+        }
+
+        .arrow-down {
+            border-top: 15px solid #ccc;
+        }
+
+        /* Estilo personalizado para el proceso de pago (verde) */
+        .stage.payment {
+            background-color: #6bd68b;
+        }
+
+        /* Estilo personalizado para el abandono previo al pago (rojo) */
+        .stage.abandon {
+            background-color: #f46262;
+        }
+
+        /* Estilo personalizado para el carrito de compras (amarillo) */
+        .stage.cart {
+            background-color: #f7f748;
+        }
+
+    </style>
+    <title>Diagrama de E-Commerce</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Etapa 1: Llegada de Clientes -->
+        <div class="stage">
+            <h3>Llegada de Clientes</h3>
+            <p>Clientes llegan al sitio web</p>
+        </div>
+        <!-- Flecha de conexión -->
+        <div class="arrow arrow-down"></div>
+        <!-- Etapa 2: Selección de Productos en el Carrito -->
+        <div class="stage">
+            <h3>Selección de Productos</h3>
+            <p>Clientes agregan productos al carrito</p>
+        </div>
+        <!-- Flecha de conexión -->
+        <div class="arrow arrow-down"></div>
+        <!-- Etapa 3: Carrito de Compras -->
+        <div class="stage cart">
+            <h3>Carrito de Compras</h3>
+            <p>Clientes revisan su carrito antes de proceder</p>
+        </div>
+        <!-- Flecha de conexión -->
+        <div class="arrow arrow-down"></div>
+        <!-- Etapa 4: Abandono (previo al pago) - Nodo Final -->
+        <div class="stage abandon">
+            <h3>Abandono</h3>
+            <p>Algunos clientes abandonan debido al tiempo de espera</p>
+        </div>
+    </div>
+    
+    <!-- Separación de flujos -->
+    <div class="arrow arrow-down"></div>
+    
+    <!-- Etapa 5: Proceso de Pago - Nodo Final -->
+    <div class="container">
+        <div class="stage payment">
+            <h3>Proceso de Pago</h3>
+            <p>Clientes completan el proceso de pago</p>
+        </div>
+    </div>
+</body>
+</html>
